@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rowdies:wght@300;400;700&display=swap');
+
+/* Estilo fondo del formulario */
+body {
+    background-image: url('libertadoresdeamerica.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: 'Bebas Neue', sans-serif; /* Aplicar la nueva fuente */
+    color: #8cff00;
+    text-align: center; /* Centrar el contenido horizontalmente */
+    margin: 0; /* Quitar márgenes del body */
+    padding: 0; /* Quitar relleno del body */
+    position: relative; /* Posicionamiento relativo para el contenedor de la imagen */
+}
+
+/* Estilo de la imagen del logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Ajustar el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+/* Estilo general del formulario */
+form {
+    max-width: 400px;
+    margin: 50px auto; /* Espacio desde la parte superior */
+    padding: 20px;
+    border: 11px solid #ff0000;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+/* Estilos para las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8cff00;
+    text-shadow: 1px 1px 2px #000000; /* Borde alrededor de la tipografía */
+}
+
+/* Estilos para los campos de números */
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el contenido */
+    margin-bottom: 10px; /* Espacio entre divs */
+}
+
+/* Estilos para los spans dentro de div */
+span {
+    margin-right: 5px;
+    color: #ffffff; /* Color blanco para los spans */
+    text-shadow: 1px 1px 2px #000000; /* Borde alrededor de la tipografía */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #f35858;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    color: #000000; /* Texto negro para los campos */
+    font-size: 18px; /* Tamaño de la fuente más grande */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo para los campos de entrada enfocados */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Sombreado leve al enfocar */
+    background-color: rgba(255, 255, 255, 1); /* Fondo completamente blanco al enfocar */
+    outline: none; /* Quitar el borde de enfoque predeterminado */
+    color: #000000; /* Asegurar que el texto siga siendo negro */
+}
+
+/* Estilos para el placeholder */
+::placeholder {
+    color: #aaaaaa; /* Color gris para el placeholder */
+    opacity: 1; /* Asegurar que el placeholder sea visible */
+    text-shadow: none; /* Quitar cualquier sombra del placeholder */
+}
+
+/* Estilos para el botón de registrarse */
+input[type="submit"] {
+    background-color: #ff0000;
+    color: #8cff00;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px; /* Tamaño de la fuente más grande para el botón */
+    text-shadow: 1px 1px 2px #000000; /* Borde alrededor de la tipografía */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para el botón */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+input[type="submit"]:hover {
+    background-color: #1eff00;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
